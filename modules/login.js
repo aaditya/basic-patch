@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken')
 
-const config = require('../systen/config.js')
+const config = require('../system/config.js')
 
 const app = require('../app.js')
 
@@ -17,7 +17,7 @@ const checkUser = (req,res) => {
 				"username":req.body.username,
 				"password":req.body.password,
       }
-      var token = jwt.sign(data, app.get('superSecret'), {
+      var token = jwt.sign(data, config.settings.secret, {
 			     expiresIn: 86400 // expires in 24 hours
 			});
 

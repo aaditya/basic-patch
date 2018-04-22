@@ -22,7 +22,7 @@ var token = jwt.sign(testdata, config.settings.secret, {
 
 var globalDummyToken = token;
 
-describe('Routes', () => {
+describe('Routes', function() {
 	this.timeout(20000);
    describe('/POST login', () => {
       it('it should return token', (done) => {

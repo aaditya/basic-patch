@@ -1,12 +1,22 @@
-# BASIC AUTH API for SOCIAL COPS
+# BASIC AUTH API
 
-## Command Line Actions :
+## Introduction
 
-> To install dependencies - npm install
+> This API serves as a dummy check for NodeJS based Implementation of JSON Web Tokens and JSON Patch followed by Thumbnail generation of images.
 
-> To start server - npm start
+## Installation and Running
 
-> To test api(s) - npm test
+### To install dependencies
+
+> npm install
+
+### To start server
+
+> npm start
+
+### To test api(s)
+
+> npm test
 
 ## Route Information
 

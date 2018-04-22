@@ -8,7 +8,7 @@ const auth = (req,res,next) => {
 	// decode token
 	if (token) {
 		// verifies secret and checks exp
-		jwt.verify(token, config.secret, (err, decoded) => {
+		jwt.verify(token, config.settings.secret, (err, decoded) => {
         if (err) {
   				return res.json({ success: false, message: 'Failed to authenticate token.' })
   			}
